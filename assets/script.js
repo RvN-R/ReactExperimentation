@@ -1,3 +1,7 @@
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// Creatiing a function to render.
 // function Navbar(){
 //     return(
 //         <div className="row">
@@ -39,18 +43,19 @@
 // h1.className = "header"
 // document.getElementById("root").append(h1)
 
-const NavBar =(
-    <nav>
-        <h1>Navigation Heading</h1>
+
+//Challenge 1 
+const pageContent = (
+    <div>
+        <img src="media/reactLogo.png" width="100px"></img>
+        <h1>Fun Facts about React</h1>
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li> Was first released in 2013</li>
+            <li> Was originally created by Jordan Walke</li>
+            <li> Has well over 100k starts on Github</li>
+            <li> Is maintained by Facebook</li>
         </ul>
-    </nav>
+    </div>
 )
 
-
-ReactDOM.render(
-    NavBar, 
-    document.getElementById("root"))
+ReactDOM.render(pageContent, document.getElementById("root"))
