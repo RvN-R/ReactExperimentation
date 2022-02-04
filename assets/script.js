@@ -64,8 +64,13 @@
 function Header(){
     return(
         <header>
-            <nav>
-                <img src="media/reactLogo.png" width="100px"></img>
+            <nav className="nav">
+                <img className ="nav-logo"src="media/reactLogo.png"></img>
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
@@ -73,21 +78,21 @@ function Header(){
 
 function MainContent(){
     return(
-        <>
-        <h1>Things I am excited to learn about React</h1>
+        <div className="main-content">
+        <h1 className="title">Things I am excited to learn about React</h1>
         <ol>
             <li>Thing 1</li>
             <li>Thing 2</li>
             <li>Thing 3</li>
             <li>Thing 4</li>
         </ol>
-        </>
+        </div>
     )
 }
 
 function Footer(){
     return(
-        <footer>
+        <footer className="footer">
             Van Nairn development. All rights reserved
         </footer>
     )

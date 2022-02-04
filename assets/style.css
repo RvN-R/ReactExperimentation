@@ -1,0 +1,30 @@
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.nav-items > li {
+    padding: 20px;
+}
+
+.nav-logo{
+    width: 100px;
+}
+
+.title{
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+
+.footer{
+    background-color: lightcoral;
+    text-align: center;
+}
