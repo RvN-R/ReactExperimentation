@@ -45,17 +45,62 @@
 
 
 //Challenge 1 
-const pageContent = (
-    <div>
-        <img src="media/reactLogo.png" width="100px"></img>
-        <h1>Fun Facts about React</h1>
-        <ul>
-            <li> Was first released in 2013</li>
-            <li> Was originally created by Jordan Walke</li>
-            <li> Has well over 100k starts on Github</li>
-            <li> Is maintained by Facebook</li>
-        </ul>
-    </div>
-)
+// const pageContent = (
+//     <div>
+//         <img src="media/reactLogo.png" width="100px"></img>
+//         <h1>Fun Facts about React</h1>
+//         <ul>
+//             <li> Was first released in 2013</li>
+//             <li> Was originally created by Jordan Walke</li>
+//             <li> Has well over 100k starts on Github</li>
+//             <li> Is maintained by Facebook</li>
+//         </ul>
+//     </div>
+// )
 
-ReactDOM.render(pageContent, document.getElementById("root"))
+// ReactDOM.render(pageContent, document.getElementById("root"))
+
+// Challenge 2
+function Header(){
+    return(
+        <header>
+            <nav>
+                <img src="media/reactLogo.png" width="100px"></img>
+            </nav>
+        </header>
+    )
+}
+
+function MainContent(){
+    return(
+        <>
+        <h1>Things I am excited to learn about React</h1>
+        <ol>
+            <li>Thing 1</li>
+            <li>Thing 2</li>
+            <li>Thing 3</li>
+            <li>Thing 4</li>
+        </ol>
+        </>
+    )
+}
+
+function Footer(){
+    return(
+        <footer>
+            Van Nairn development. All rights reserved
+        </footer>
+    )
+}
+
+function Page(){
+    return(
+        <div>
+            <Header/>
+            <MainContent/>
+            <Footer/>
+        </div>
+    )
+}
+
+ReactDOM.render(<Page/>, document.getElementById("root"))
